@@ -36,7 +36,7 @@ class Lexer(private val text: String) {
                     return token
                 }
             }
-            throw RuntimeException("Error parsing input")
+            throw RuntimeException("nextchar is ${nextChar.toString()}")
         }
         return Token(TokenType.EOF, TokenType.EOF.value)
     }

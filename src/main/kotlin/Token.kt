@@ -6,5 +6,5 @@ data class Token(val tokenType: TokenType, val value: String) {
 
 
 enum class TokenType(val value: String) {
-    NUMBER("NUMBEER"), PLUS("+"), MIN("-"), MUL("*"), DIV("/"), LBRACKETS("("), RBRACKETS(")"), EOF("EOF")
+    NUMBER("NUMBER"), PLUS("+"), MIN("-"), MUL("*"), DIV("/"), LBRACKETS("("), RBRACKETS(")"), EOF("EOF")
 }
