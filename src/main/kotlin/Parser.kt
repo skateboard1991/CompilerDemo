@@ -49,7 +49,7 @@ class Parser(val lexer: Lexer) {
                 eat(TokenType.NUMBER)
                 Num(tmpToken)
             }
-            TokenType.LBRACKETS==curToken.tokenType -> {
+            TokenType.LBRACKETS == curToken.tokenType -> {
                 eat(TokenType.LBRACKETS)
                 val node = exp()
                 eat(TokenType.RBRACKETS)

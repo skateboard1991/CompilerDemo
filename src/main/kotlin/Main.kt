@@ -11,7 +11,7 @@ fun main() {
 //            nextToken = lexer.getNextToken()
 //        }
         val parser = Parser(lexer)
-        val ast = parser.parse()
-        println(ast)
+        val interpreter=Interpreter(parser)
+        println("result is ${interpreter.interpret()}")
     }
 }
